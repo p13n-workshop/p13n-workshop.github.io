@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="keywords" content="personalization, generative AI, workshop, computer vision, deep learning">
+    
+    <link rel="shortcut icon" href="static/img/favicon.ico">
+    
+    <title>P13N: Personalization in Generative AI Workshop</title>
+    <meta name="description" content="1st Personalization in Generative AI Workshop (P13N) – a full-day event featuring paper presentations, panel discussions, and a competition on personalized generative AI for images, video, 3D, and AR/VR.">
+    
+    <!--Open Graph Related Stuff-->
+    <meta property="og:title" content="P13N: Personalization in Generative AI Workshop"/>
+    <meta property="og:url" content="https://yourworkshopwebsite.org"/>
+    <meta property="og:description" content="1st Personalization in Generative AI Workshop (P13N) – exploring personalized generative AI across images, video, 3D, and AR/VR."/>
+    <meta property="og:site_name" content="P13N Workshop"/>
+    <meta property="og:video" content="https://yourworkshopwebsite.org/static/img/site/teaser_video.mp4"/>
+    
+    <!--Twitter Card Stuff-->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="P13N: Personalization in Generative AI Workshop"/>
+    <meta name="twitter:video" content="https://yourworkshopwebsite.org/static/img/site/teaser_video.mp4">
+    <meta name="twitter:url" content="https://yourworkshopwebsite.org"/>
+    <meta name="twitter:description" content="Join us for the 1st Personalization in Generative AI Workshop (P13N) featuring cutting-edge research on personalized generative models."/>
+    
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="static/css/main.css" media="screen,projection">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js"></script>
+    
+    <style>
+      .highlight-link {
+          background-color: yellow;
+          text-decoration: underline;
+          padding: 2px 4px;
+          border-radius: 3px;
+      }
+      .people-pic {
+        max-width: 139px;
+        max-height: 139px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .speaker-pic {
+        max-width: 150px;
+        max-height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .submit-button {
+        background-color: #3e8e41;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .submit-button:hover {
+        background-color: #2f6f31;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <!-- Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/"></a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li><a href="#intro">Overview</a></li>
+            <li><a href="#call-for-papers">Call for Papers</a></li>
+            <li><a href="#dates">Important Dates</a></li>
+            <li><a href="#speakers">Invited Speakers</a></li>
+            <li><a href="#panelists">Invited Panelists</a></li>
+            <li><a href="#organizers">Organizers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="page-content">
+        <p><br /></p>
+        <div class="row">
+          <div class="col-xs-12">
+            <center><h1>P13N: Personalization in Generative AI Workshop</h1></center>
+            <center>TBA</center>
+            <center>Workshop Meeting Location: TBA</center>
+          </div>
+        </div>
+    
+        <hr />
+    
+        <div class="alert alert-info" role="alert">
+          <center><b>Join Zoom Meeting  <a href="#">TBA</a>.</b></center>
+        </div>
+    
+        <div class="row" id="teaser">
+            <div class="col-xs-12">
+                <center><img src="static/img/teaser/iccv2025.jpeg" alt="Teaser For ICCV 2025" style="width: 100%; height: auto;"></center>
+            </div>
+        </div>
+    
+        <p><br /></p>
+        <!-- Workshop Overview -->
+        <div class="row" id="intro">
+          <div class="col-xs-12">
+            <h2>Workshop Overview</h2>
+          </div>
+        </div> <br>
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              Welcome to the Personalization in Generative AI Workshop (P13N). This full-day workshop brings together leading researchers and industry experts to explore cutting-edge personalization techniques in generative AI.
+            </p>
+            <p>
+              The event will feature paper presentations, panel discussions, and a competition focusing on personalized generative models across images, video, 3D, and AR/VR. Topics include advanced optimization methods for personalizing diffusion models (e.g., DreamBooth, textual inversion), multi-subject composition, cross-modal personalization, AR/VR personalization, dataset curation and benchmarking, as well as ethical and privacy considerations.
+            </p>
+          </div>
+        </div>
+    
+        <p><br /></p>
+        <!-- Call for Papers -->
+        <div id="call-for-papers" style="background-color: #4CAF50; padding: 24px; text-align: center;border-radius: 5px;">
+          <h2 style="color: white;">Call for Papers is Open!</h2>
+          <p style="color: white;">
+              We invite submissions on all aspects of personalization in generative AI. Both short papers (4 pages) and long papers (8 pages) are welcome.
+              <br>Submission Deadline: July 31, 2025
+              <br>Notification to Authors: August 7, 2025
+              <br>Camera-ready Deadline: August 15, 2025
+          </p>
+
+          <p style="color: white;">Topics:</p>
+          <ul style="color: white; text-align: left; display: inline-block;">
+              <li>Advanced optimization methods for personalizing diffusion models (e.g., DreamBooth, textual inversion)</li>
+              <li>Multi-subject composition: handling multiple entities in a single scene</li>
+              <li>Cross-modal personalization: bridging text, images, video, and 3D</li>
+              <li>AR/VR personalization for handling immersive experiences where user-specific styles or preferences adapt in real time within augmented or virtual environments</li>
+              <li>Dataset curation for benchmarking personalized generative models</li>
+              <li>Benchmark and evaluation metrics, developing standardized protocols to measure personalization quality, style consistency, and identity preservation</li>
+              <li>New methods for personalized video generation</li>
+              <li>Ethical and privacy considerations in personalization (addressing user consent, data ownership, and transparency in personalized content generation)</li>
+              <li>Personalized storytelling and narrative visualization</li>
+              <li>Style adaptation for digital art and illustration</li>
+              <li>Emerging applications in gaming, e-commerce, and digital marketing</li>
+              <li>Adapting LLM-based personalization approaches to vision tasks</li>
+              <li>Personalization on edge devices for deploying personalized models on resource-constrained hardware</li>
+          </ul>
+          <p><br></p>
+          <a href="" class="submit-button" target="_blank">Submit Your Paper</a>
+        </div>
+    
+        <p><br /></p>
+        <!-- Important Dates -->
+        <div class="row" id="dates">
+          <div class="col-xs-12">
+            <h2>Important Dates</h2>
+          </div>
+        </div> <br>
+        <div class="row">
+          <div class="col-xs-12">
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td>Description</td>
+                  <td>Date</td>
+                </tr>
+                <tr>
+                  <td>Paper Submission Deadline</td>
+                  <td>July 31, 2025</td>
+                </tr>
+                <tr>
+                  <td>Notification to Authors</td>
+                  <td>August 7, 2025</td>
+                </tr>
+                <tr>
+                  <td>Camera-ready Deadline</td>
+                  <td>August 15, 2025</td>
+                </tr>
+                <tr>
+                  <td>Workshop Date</td>
+                  <td>TBD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p><br /></p>
+        <!-- Invited Speakers -->
+        <div class="row" id="speakers">
+          <div class="col-xs-12">
+            <h2>Invited Speakers</h2>
+          </div>
+        </div> <br>
+    
+        <div class="row person-box">
+          <div class="col-md-2">
+            <a href="https://natanielruiz.github.io/"><img class="speaker-pic" style="margin-bottom: 8px;" src="static/img/people/nataniel_ruiz.jpg" alt="Nataniel Ruiz"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" /></a>
+          </div>
+          <div class="col-md-10">
+            <p>
+              <b><a target="_blank" href="https://natanielruiz.github.io/">Nataniel Ruiz</a></b> is a Research Scientist at Google and the lead author of DreamBooth, which was selected for a Best Paper Award at CVPR 2023. His main research interests revolve around generative models, and he has authored other works in the areas of controllability and personalization of diffusion models, including StyleDrop, ZipLoRA, and HyperDreamBooth. He obtained his PhD from Boston University, his Master’s from Georgia Tech, and his Bachelor’s from École Polytechnique in Paris. Prior to joining Google, he also interned at Apple, Amazon, and NEC Labs.
+            </p>
+          </div>
+        </div>
+    
+        <div class="row person-box">
+          <div class="col-md-2">
+            <a href="https://kfiraberman.github.io/"><img class="speaker-pic" style="margin-bottom: 8px;" src="static/img/people/kfir_aberman.jpg" alt="Kfir Aberman"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" /></a>
+          </div>
+          <div class="col-md-10">
+            <p>
+              <b><a target="_blank" href="https://kfiraberman.github.io/">Kfir Aberman</a></b> is a Research Scientist and team lead in the Creative Vision group at Snap Research. His primary research focus lies in Generative AI for visual content, with a core objective of synthesizing novel visual effects that are impactful and meaningful to people’s day to day. Before joining Snap, Kfir was a Research Scientist at Google. His research led to publications in top conferences and journals, where some of his contributions in the field of generative AI include noteworthy works such as Prompt-to-Prompt and DreamBooth. 
+            </p>
+          </div>
+        </div>
+    
+        <div class="row person-box">
+          <div class="col-md-2">
+            <a href="https://yael-vinker.github.io/website/index.html"><img class="speaker-pic" style="margin-bottom: 8px;" src="static/img/people/yael_vinker.jpg" alt="Yael Vinker"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" /></a>
+          </div>
+          <div class="col-md-10">
+            <p>
+              <b><a target="_blank" href="https://yael-vinker.github.io/website/index.html">Yael Vinker</a></b> is a postdoctoral associate at MIT CSAIL, working under the guidance of Professor Antonio Torralba. She completed her PhD at Tel Aviv University, where she was advised by Daniel Cohen-Or and Ariel Shamir. Her research explores the intersection of computer graphics, cognitive science, and art. Her work has been recognized with two Best Paper awards and one Honorable Mention at SIGGRAPH and SIGGRAPH Asia.
+            </p>
+          </div>
+        </div>
+
+        <div class="row person-box">
+          <div class="col-md-2">
+            <a href="https://www.cs.cmu.edu/~junyanz/"><img class="speaker-pic" style="margin-bottom: 8px;" src="static/img/people/junyan_zhu.jpg" alt="Jun-Yan Zhu"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" /></a>
+          </div>
+          <div class="col-md-10">
+            <p>
+              <b><a target="_blank" href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a></b> is an Assistant Professor at CMU’s School of Computer Science. Previously, he was a Research Scientist at Adobe Research and a postdoc at MIT CSAIL. He earned his Ph.D. from UC Berkeley and B.E. from Tsinghua University. His research spans computer vision, graphics, and computational photography. He has received the Samsung AI Research of the Year (2024), Packard Fellowship (2023), and NSF CAREER Award (2023).
+            </p>
+          </div>
+        </div>
+    
+        <div class="row person-box">
+          <div class="col-md-2">
+            <a href="https://imisra.github.io/"><img class="speaker-pic" style="margin-bottom: 8px;" src="static/img/people/ishan_misra.jpg" alt="Ishan Misra"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" /></a>
+          </div>
+          <div class="col-md-10">
+            <p>
+              <b><a target="_blank" href="https://imisra.github.io/">Ishan Misra</a></b> is a Research Scientist in the GenAI group at Meta where he led the research efforts on video generation models. He was the tech lead for Meta's Movie Gen project for foundation models in video generation, video editing, video personalization, and audio generation.  He holds a PhD from the Robotics Institute at Carnegie Mellon University and graduated in 2018 when he joined FAIR.
+            </p>
+          </div>
+        </div>
+    
+        <div class="row person-box">
+          <div class="col-md-2">
+            <a href="#"><img class="speaker-pic" style="margin-bottom: 8px;" src="static/img/people/fatih_porikli.jpg" alt="Fatih Porikli"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" /></a>
+          </div>
+          <div class="col-md-10">
+            <p>
+            <b><a target="_blank" href="https://www.porikli.com/">Fatih Porikli</a></b> is an IEEE Fellow and the Global Lead of AI Systems at Qualcomm AI Research. He was a full tenured Professor in the Research School of Engineering, Australian National University (ANU), Canberra. His recent work on personalization includes FouRA, LoRA-X and HyperNet Fields.
+            </p>
+          </div>
+        </div>
+
+        <div class="row person-box">
+          <div class="col-md-2">
+            <a href="#"><img class="speaker-pic" style="margin-bottom: 8px;" src="static/img/people/hila_chefer.jpg" alt="Hila Chefer"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" /></a>
+          </div>
+          <div class="col-md-10">
+            <p>
+            <b><a target="_blank" href="https://hila-chefer.github.io/">Hila Chefer</a></b> is a PhD Candidate at Tel Aviv University and a research intern at Meta AI. Her groundbreaking work in video personalization and generation includes VideoJAM, Still-Moving, and Lumiere.
+            </p>
+          </div>
+        </div>
+    
+        <p><br /></p>
+      
+        <!-- Panelists -->
+        <div class="row" id="panelists">
+          <div class="col-xs-12">
+            <h2>Invited Panelists</h2>
+          </div>
+        </div> <br>
+    
+        <div class="row">
+          <div class="col-xs-3 person-short-box">
+            <a href="https://baulab.info">
+              <img class="people-pic" src="static/img/people/david_bau.jpg" alt="David Bau"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+              <a href="https://baulab.info">David Bau</a>
+              <h6>Northeastern Khoury College</h6>
+            </div>
+          </div>  
+          <div class="col-xs-3 person-short-box">
+            <a href="https://varunjampani.github.io/">
+              <img class="people-pic" src="static/img/people/varun_jampani.jpg" alt="Varun Jampani"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+              <a href="https://varunjampani.github.io/">Varun Jampani</a>
+              <h6>Stability AI</h6>
+            </div>
+          </div> 
+        </div>  
+        <p><br /></p>
+        
+
+        <!-- Organizers -->
+        <div class="row" id="organizers">
+          <div class="col-xs-12">
+            <h2>Organizers</h2>
+          </div>
+        </div> <br>
+    
+        <div class="row">
+          <div class="col-xs-3 person-short-box">
+            <a href="https://pinguar.org">
+              <img class="people-pic" src="static/img/people/pinar_yanardag.jpg" alt="Pinar Yanardag"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+              <a href="https://pinguar.org">Pinar Yanardag</a>
+              <h6>Virginia Tech</h6>
+            </div>
+          </div>
+          <div class="col-xs-3 person-short-box">
+            <a href="https://rinongal.github.io/">
+              <img class="people-pic" src="static/img/people/rinon_gal.jpg" alt="Rinon Gal"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+              <a href="https://rinongal.github.io/">Rinon Gal</a>
+              <h6>NVIDIA</h6>
+            </div>
+          </div>
+          <div class="col-xs-3 person-short-box">
+            <a href="https://danielcohenor.com/">
+              <img class="people-pic" src="static/img/people/daniel_cohen_or.jpg" alt="Federico Tombari"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+              <a href="https://danielcohenor.com/">Daniel Cohen-Or</a>
+              <h6>Tel Aviv University</h6>
+            </div>
+          </div>
+          <div class="col-xs-3 person-short-box">
+            <a href="https://tunahansalih.github.io">
+              <img class="people-pic" src="static/img/people/tuna_han.jpg" alt="Tuna Han Salih Meral"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+              <a href="https://tunahansalih.github.io">Tuna Han Salih Meral</a>
+              <h6>Virginia Tech</h6>
+            </div>
+          </div>
+          <div class="col-xs-3 person-short-box">
+            <a href="https://enis.dev">
+              <img class="people-pic" src="static/img/people/enis_simsar.jpg" alt="Enis Simsar"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+              <a href="https://enis.dev">Enis Simsar</a>
+              <h6>ETH Zurich</h6>
+            </div>
+          </div>
+          <div class="col-xs-3 person-short-box">
+            <a href="https://nupurkmr9.github.io">
+              <img class="people-pic" src="static/img/people/nupur_kumari.jpg" alt="Federico Tombari"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+              <a href="https://nupurkmr9.github.io">Nupur Kumari</a>
+              <h6>Carnegie Mellon University</h6>
+            </div>
+          </div>
+          <div class="col-xs-3 person-short-box">
+            <a href="https://www.cs.bilkent.edu.tr/~adundar/">
+              <img class="people-pic" src="static/img/people/aysegul_dundar.jpg" alt="Federico Tombari"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+              <a href="https://www.cs.bilkent.edu.tr/~adundar/">Ayşegül Dündar</a>
+              <h6>Bilkent University</h6>
+            </div>
+          </div>
+          <div class="col-xs-3 person-short-box">
+            <a href="https://federicotombari.github.io/">
+              <img class="people-pic" src="static/img/people/federico_tombari.jpg" alt="Federico Tombari"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+              <a href="https://federicotombari.github.io/">Federico Tombari</a>
+              <h6>Google, TUM</h6>
+            </div>
+          </div>
+        </div>
+    
+        <p><br /></p>
+
+        <!-- Challenge Organizers -->
+        <div class="row" id="organizers">
+            <div class="col-xs-12">
+              <h2>Challenge Organizers</h2>
+            </div>
+        </div> <br>
+    
+        <div class="row">
+        <div class="col-xs-3 person-short-box">
+            <a href="https://yusufdalva.github.io">
+            <img class="people-pic" src="static/img/people/yusuf_dalva.jpg" alt="Yusuf Dalva"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+            <a href="https://yusufdalva.github.io">Yusuf Dalva</a>
+            <h6>Virginia Tech</h6>
+            </div>
+        </div>
+        <div class="col-xs-3 person-short-box">
+            <a href="https://x.com/TKazimi415">
+            <img class="people-pic" src="static/img/people/tahira_kazimi.jpg" alt="Tahira Kazimi"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+            <a href="https://x.com/TKazimi415">Tahira Kazimi</a>
+            <h6>Virginia Tech</h6>
+            </div>
+        </div>
+        <div class="col-xs-3 person-short-box">
+            <a href="https://yesiltepe-hidir.github.io/">
+            <img class="people-pic" src="static/img/people/hidir_yesiltepe.jpg" alt="Hidir Yesiltepe"  onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+            </a>
+            <div class="people-name">
+            <a href="https://yesiltepe-hidir.github.io/">Hidir Yesiltepe</a>
+            <h6>Virginia Tech</h6>
+            </div>
+        </div>
+        </div>
+      
+        <p><br /></p>
+        
+        <!-- Contact -->
+        <div class="row" id="contact">
+          <div class="col-xs-12">
+            <h2>Contact</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              To contact the organizers please use <b>generative.p13n.workshop@gmail.com</b>
+            </p>
+          </div>
+        </div>
+        <p><br /></p>
+    
+        <hr />
+    
+        <!-- Acknowledgments -->
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Acknowledgments</h2>
+          </div>
+        </div>
+        <p><a name="/acknowledgements"></a></p>
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              Thanks to <span style="color:#1a1aff;font-weight:400;"><a href="https://languagefor3dscenes.github.io/">languagefor3dscenes</a></span> for the webpage format.
+            </p>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  
+  </body>
+</html>
