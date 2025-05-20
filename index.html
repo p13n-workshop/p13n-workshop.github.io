@@ -91,6 +91,7 @@
             <li><a href="#intro">Overview</a></li>
             <li><a href="#call-for-papers">Call for Papers</a></li>
             <li><a href="#dates">Important Dates</a></li>
+            <li><a href="#challenge">Challenge</a></li>
             <li><a href="#speakers">Invited Speakers</a></li>
             <li><a href="#panelists">Invited Panelists</a></li>
             <li><a href="#organizers">Organizers</a></li>
@@ -106,16 +107,16 @@
         <div class="row">
           <div class="col-xs-12">
             <center><h1>P13N: Personalization in Generative AI Workshop</h1></center>
-            <center>TBA</center>
-            <center>Workshop Meeting Location: TBA</center>
+            <center><h2><b>ICCV 2025</b></h2></center>
+            <center><h2>Hawaii, Oct 19/Oct 20 (TBD)</h2></center>
           </div>
         </div>
     
         <hr />
     
-        <div class="alert alert-info" role="alert">
+        <!-- <div class="alert alert-info" role="alert">
           <center><b>Join Zoom Meeting  <a href="#">TBA</a>.</b></center>
-        </div>
+        </div> -->
     
         <div class="row" id="teaser">
             <div class="col-xs-12">
@@ -141,12 +142,12 @@
           </div>
         </div>
     
-        <p><br /></p>
+        <!-- <p><br /></p> -->
         <!-- Call for Papers -->
-        <div id="call-for-papers" style="background-color: #4CAF50; padding: 24px; text-align: center;border-radius: 5px;">
+        <div id="call-for-papers" style="background-color: #57AC96; padding: 24px; text-align: center;border-radius: 5px;">
           <h2 style="color: white;">Call for Papers is Open!</h2>
           <p style="color: white;">
-              We invite submissions on all aspects of personalization in generative AI. Both short papers (4 pages) and long papers (8 pages) are welcome.
+              We invite submissions on all aspects of personalization in generative AI. Both short papers (4 pages, out of proceedings) and long papers (8 pages, in-proceedings) are welcome.
           </p>
 
           <p style="color: white;">Topics:</p>
@@ -178,33 +179,66 @@
         </div> <br>
         <div class="row">
           <div class="col-xs-12">
-            <table class="table table-striped">
-              <tbody>
-                <tr>
-                  <td>Description</td>
-                  <td>Date</td>
-                </tr>
-                <tr>
-                  <td>Paper Submission Deadline</td>
-                  <td>July 31, 2025</td>
-                </tr>
-                <tr>
-                  <td>Notification to Authors</td>
-                  <td>August 7, 2025</td>
-                </tr>
-                <tr>
-                  <td>Camera-ready Deadline</td>
-                  <td>August 15, 2025</td>
-                </tr>
-                <tr>
-                  <td>Workshop Date</td>
-                  <td>TBD</td>
-                </tr>
-              </tbody>
-            </table>
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td><b>Description</b></td>
+                <td><b>Date</b></td>
+                <td><b>Countdown (AoE)</b></td>
+              </tr>
+              <tr>
+                <td>Long-paper Deadline (in proceedings)</td>
+                <td>June 27, 2025 23:59 AoE</td>
+                <td id="countdown1"></td>
+              </tr>
+              <tr>
+                <td>Long-paper Notification</td>
+                <td>July 10, 2025 23:59 AoE</td>
+                <td id="countdown2"></td>
+              </tr>
+              <tr>
+                <td>Long-paper Camera Ready</td>
+                <td>August 13, 2025 23:59 AoE</td>
+                <td id="countdown3"></td>
+              </tr>
+              <tr>
+                <td>Short-paper Deadline (out of proceedings)</td>
+                <td>August 18, 2025 23:59 AoE</td>
+                <td id="countdown4"></td>
+              </tr>
+              <tr>
+                <td>Short-paper Notification</td>
+                <td>August 25, 2025 23:59 AoE</td>
+                <td id="countdown5"></td>
+              </tr>
+              <tr>
+                <td>Workshop Date</td>
+                <td>Full-day, Oct 19/Oct 20 (TBD)</td>
+                <td id="countdown6"></td>
+              </tr>
+            </tbody>
+          </table>
           </div>
         </div>
 
+        <p><br /></p>
+
+        <!-- Challenge -->
+        <div id="challenge" style="background-color: #57AC96; padding: 24px; text-align: center;border-radius: 5px;">
+          <h2 style="color: white;">Personalization Challenge</h2>
+          <p style="color: white;">
+            We will host two key challenges that address critical problems in the personalization of generative models: multi-concept image personalization and video personalization.
+            <br><br>
+            <b>Multi-concept personalization challenge:</b> Current approaches often struggle with concept interference, identity loss, or compositional failures when combining multiple concepts. This challenge will focus on methods that accurately integrate multiple personalized concepts (e.g., a custom character, specific objects, or artistic styles) while maintaining semantic consistency.
+            <br><br>
+            <b>Video personalization:</b> This challenge will focus on achieving temporally coherent personalization while maintaining subject fidelity across generated frames. This includes addressing challenges such as identity drift, motion distortion, and loss of subject details over time.
+            <br><br>
+            The challenge datasets and details will be announced on June 25, 2025. With sponsorship from Fal.ai, we will distribute cash prizes up to $5K, stay tuned!
+          </p>
+          <!-- <p><br></p> -->
+          <!-- <a href="" class="submit-button" target="_blank">Submit Your Paper</a> -->
+        </div>
+    
         <p><br /></p>
         <!-- Invited Speakers -->
         <div class="row" id="speakers">
@@ -490,5 +524,49 @@
       </div>
     </div>
   
+    <script>
+    // AoE = UTC-12
+    function getAoETimeOffsetDate(dateStr) {
+      return new Date(new Date(dateStr).getTime() + 12 * 60 * 60 * 1000);
+    }
+
+    function updateCountdown(id, targetDate) {
+      const now = new Date();
+      const distance = targetDate - now;
+
+      if (distance <= 0) {
+        document.getElementById(id).innerHTML = "⏳ Deadline passed";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById(id).innerHTML =
+        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    function startCountdowns() {
+      const dates = [
+        ["countdown1", "2025-06-28T11:59:00Z"], // June 27 AoE is June 28 11:59 UTC
+        ["countdown2", "2025-07-10T11:59:00Z"],
+        ["countdown3", "2025-08-13T11:59:00Z"],
+        ["countdown4", "2025-08-18T11:59:00Z"],
+        ["countdown5", "2025-08-25T11:59:00Z"],
+        ["countdown6", "2025-10-19T11:59:00Z"],
+      ];
+
+      dates.forEach(([id, dateStr]) => {
+        setInterval(() => {
+          const targetDate = new Date(dateStr);
+          updateCountdown(id, targetDate);
+        }, 1000);
+      });
+    }
+
+    startCountdowns();
+    </script>
   </body>
 </html>
