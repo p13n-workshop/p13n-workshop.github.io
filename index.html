@@ -208,16 +208,11 @@
       <!-- Call for Papers -->
       <div id="call-for-papers"
         style="background-color: #57AC96; padding: 24px; text-align: center;border-radius: 5px;">
-        <h2 style="color: white;">Call for Papers</h2>
+        <h2 style="color: white;">Call for Papers is Open!</h2>
         <p style="color: white;">
-          Call for papers coming soon! The workshop will invite submissions on all aspects of personalization in
-          generative AI.
+          We invite submissions on all aspects of personalization in generative AI. Both short papers (4 pages, out of proceedings) and long papers (8 pages, in-proceedings) are welcome and should be double-blind. References do not count toward the page limits. Including supplementary material is allowed after the references.
         </p>
-        <p style="color: white;">
-          We invite contributions addressing topics such as user modeling, controllability, fairness, interpretability,
-          evaluation of personalization, human-AI co-creation, and responsible deployment. We welcome talks and paper
-          submissions on varied aspects of personalization, including:
-        </p>
+
         <p style="color: white;">Topics:</p>
         <ul style="color: white; text-align: left; display: inline-block;">
           <li>Advanced optimization methods for personalizing generative models</li>
@@ -236,8 +231,13 @@
           <li>Personalization on edge devices</li>
         </ul>
         <p><br></p>
-        <!-- <a href="#" class="submit-button" ...>Submit Your Paper</a> -->
-      </div>
+            <a href="https://openreview.net/group?id=thecvf.com/CVPR/2026/Workshop/P13N" 
+              class="submit-button" 
+              target="_blank" 
+              style="background-color: #FF6B6B; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block;">
+              Submit Your Paper
+            </a>       
+          </div>
 
       <p><br /></p>
       <!-- Important Dates -->
@@ -261,19 +261,29 @@
                 <td></td>
               </tr>
               <tr>
-                <td><strong>Paper Submission Deadline</strong></td>
-                <td>March 31, 2026 23:59 AoE</td>
+                <td>Long-paper Deadline (archival)</td>
+                <td>March 10, 2026 23:59 AoE</td>
                 <td id="countdown1"></td>
               </tr>
               <tr>
-                <td><strong>Notification to Authors</strong></td>
-                <td>April 30, 2026</td>
+                <td>Long-paper Notification</td>
+                <td>March 15, 2026 23:59 AoE</td>
                 <td id="countdown2"></td>
               </tr>
               <tr>
-                <td><strong>Camera-ready Deadline</strong></td>
-                <td>May 15, 2026</td>
+                <td>Long-paper Camera Ready</td>
+                <td>March 20, 2026 23:59 AoE</td>
                 <td id="countdown3"></td>
+              </tr>
+              <tr>
+                <td>Short-paper Deadline (non-archival)</td>
+                <td>April 20, 2026 23:59 AoE</td>
+                <td id="countdown4"></td>
+              </tr>
+              <tr>
+                <td>Short-paper Notification</td>
+                <td>April 25, 2026 23:59 AoE</td>
+                <td id="countdown5"></td>
               </tr>
             </tbody>
           </table>
@@ -690,13 +700,17 @@
     }
 
     function startCountdowns() {
-      // March 31 23:59 AoE -> April 1 11:59 UTC
-      // April 30 23:59 AoE -> May 1 11:59 UTC
-      // May 15 23:59 AoE -> May 16 11:59 UTC
+      // March 10 23:59 AoE -> March 11 11:59 UTC
+      // March 15 23:59 AoE -> March 16 11:59 UTC
+      // March 20 23:59 AoE -> March 21 11:59 UTC
+      // April 20 23:59 AoE -> April 21 11:59 UTC
+      // April 25 23:59 AoE -> April 26 11:59 UTC
       const dates = [
-        ["countdown1", "2026-04-01T11:59:00Z"],
-        ["countdown2", "2026-05-01T11:59:00Z"],
-        ["countdown3", "2026-05-16T11:59:00Z"],
+        ["countdown1", "2026-03-11T11:59:00Z"],
+        ["countdown2", "2026-03-16T11:59:00Z"],
+        ["countdown3", "2026-03-21T11:59:00Z"],
+        ["countdown4", "2026-04-21T11:59:00Z"],
+        ["countdown5", "2026-04-26T11:59:00Z"],
       ];
 
       dates.forEach(([id, dateStr]) => {
