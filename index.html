@@ -131,9 +131,10 @@
           <li><a href="#call-for-papers">Call for Papers</a></li>
           <!-- <li><a href="#dates">Important Dates</a></li> -->
           <!-- <li><a href="#challenge">Challenge</a></li> -->
-          <li><a href="#speakers">Invited Speakers</a></li>
+          <li><a href="#speakers">Speakers</a></li>
           <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#panelists">Invited Panelists</a></li>
+          <li><a href="#accepted-papers">Papers</a></li>
+          <li><a href="#panelists">Panelists</a></li>
           <li><a href="#organizers">Organizers</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="dropdown">
@@ -160,7 +161,8 @@
             <h2><b>CVPR 2026</b></h2>
           </center>
           <center>
-            <h2>June 4, 2026, 8:30 a.m. – 12:30 p.m. | Room 4CD, Denver Convention Center, Denver, CO, USA</h2>
+            <h2>June 4, 2026, 8:30 a.m. – 12:30 p.m.</h2>
+            <h2>Room 4CD, Denver Convention Center, Denver, CO, USA</h2>
           </center>
         </div>
       </div>
@@ -205,7 +207,7 @@
       <!-- Call for Papers -->
       <div id="call-for-papers"
         style="background-color: rgb(30, 50, 90); padding: 24px; text-align: center;border-radius: 5px;">
-        <h2 style="color: white;">Call for Papers is Open!</h2>
+        <h2 style="color: white;">Call for Papers is Closed</h2>
         <p style="color: white;">
           We invite submissions on all aspects of personalization in generative AI. Both short papers (4 pages, non-archival) and long papers (8 pages, archival) are welcome and should be double-blind. References do not count toward the page limits. Including supplementary material is allowed after the references.
         </p>
@@ -228,12 +230,10 @@
           <li>Personalization on edge devices</li>
         </ul>
         <p><br></p>
-            <a href="https://openreview.net/group?id=thecvf.com/CVPR/2026/Workshop/P13N" 
-              class="submit-button" 
-              target="_blank" 
-              style="background-color: rgb(255, 140, 0); color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block;">
-              Submit Your Paper
-            </a>       
+            <span
+              style="background-color: rgb(120, 120, 120); color: white; padding: 12px 24px; border-radius: 6px; font-weight: bold; display: inline-block; cursor: not-allowed; opacity: 0.7;">
+              Submissions Closed
+            </span>
           </div>
 
       <p><br /></p>
@@ -396,15 +396,15 @@
                 <td>8:25 – 8:30 AM</td>
               </tr>
               <tr>
-                <td>Oral Presentation #1</td>
+                <td>Oral Presentation #1 — Michael Opitz, "MakeupMirror: Improving Facial Attribute Preservation in Diffusion Models for Makeup Transfer"</td>
                 <td>8:30 – 8:40 AM</td>
               </tr>
               <tr>
-                <td>Oral Presentation #2</td>
+                <td>Oral Presentation #2 — Idan Schwartz, "Single Image Iterative Subject-driven Generation and Editing"</td>
                 <td>8:40 – 8:50 AM</td>
               </tr>
               <tr>
-                <td>Oral Presentation #3</td>
+                <td>Oral Presentation #3 — Yijie Zhu, "When Identities Collapse: A Stress-Test Benchmark for Multi-Subject Personalization"</td>
                 <td>8:50 – 9:00 AM</td>
               </tr>
               <tr>
@@ -416,7 +416,7 @@
                 <td>9:30 – 10:00 AM</td>
               </tr>
               <tr>
-                <td>Panel Discussion</td>
+                <td>Panel Discussion — Hila Chefer, Or Patashnik, Nataniel Ruiz, Kfir Aberman, Nupur Kumari</td>
                 <td>10:00 – 10:30 AM</td>
               </tr>
               <tr>
@@ -442,46 +442,139 @@
 
       <p><br /></p>
 
+      <!-- Accepted Papers -->
+      <div class="row" id="accepted-papers">
+        <div class="col-xs-12">
+          <h2>Accepted Papers</h2>
+        </div>
+      </div> <br>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Long Papers (Proceedings)</h3>
+          <ol>
+            <li>
+              <b>Advancing Subject Consistent and Textual Alignment Personalized Image Generation via Precise Attribute Learning</b><br />
+              Zijian He, Zheng Liu, Huiguo He, Weizhi Zhong, Yejun Tang, Huan Yang, Di ZHANG, Guanbin Li
+            </li>
+            <li>
+              <b>PerFuSe: Personalized Full-Image Restoration via Modular Fusion</b><br />
+              Nazish Naeem, Zeeshan Nadir, Seok-Jun Lee, Hamid Rahim Sheikh
+            </li>
+            <li>
+              <b>MakeupMirror: Improving Facial Attribute Preservation in Diffusion Models for Makeup Transfer</b><br />
+              Michael Opitz, Angel Martínez-González, Nefeli Andreou, Sabine Sternig, Matthieu Guillaumin, Epameinondas Antonakos
+            </li>
+            <li>
+              <b>Single Image Iterative Subject-driven Generation and Editing</b><br />
+              Yair Shpitzer, Aviv Weidenfeld, Gal Chechik, Idan Schwartz
+            </li>
+            <li>
+              <b>Let Triggers Control: Frequency-Aware Dropout for Effective Token Control</b><br />
+              Junyoung Koh, Hoyeon Moon, Dongha Kim, Seungmin Lee, SangHyun Park, Min Song
+            </li>
+            <li>
+              <b>When Identities Collapse: A Stress-Test Benchmark for Multi-Subject Personalization</b><br />
+              Zhihan Chen, Yuhuan Zhao, Yijie Zhu, Xinyu Yao
+            </li>
+            <li>
+              <b>SubjectState: Persistent Subject States for Still-Image Personalized Video Generation</b><br />
+              Adhiraj Chhoda
+            </li>
+            <li>
+              <b>How Much Do Shared Adapters Leak? Measuring Privacy Risks in Personalized Diffusion Model Weights</b><br />
+              Mujtaba Hasan
+            </li>
+            <li>
+              <b>Timestep-Constrained One-Shot Video Motion Customization</b><br />
+              Vatsal Baherwani, Yixuan Ren, Abhinav Shrivastava
+            </li>
+          </ol>
+
+          <h3>Short Papers (Non-Proceedings)</h3>
+          <ol>
+            <li>
+              <b>DesignPref: Capturing Personal Preferences in Visual Design Generation</b><br />
+              Yi-Hao Peng, Jeffrey P. Bigham, Jason Wu
+            </li>
+            <li>
+              <b>A Dataset for Dynamic Human Preferences for Vision Language Models</b><br />
+              Hannah Gao, Dylan Hadfield-Menell, Rachel Ma
+            </li>
+            <li>
+              <b>Personalizing Text-to-Image Models to Individual Taste</b><br />
+              Anne-Sofie Maerten, Juliane Verwiebe, Shyamgopal Karthik, Ameya Prabhu, Johan Wagemans, Matthias Bethge
+            </li>
+            <li>
+              <b>SwiftPie: Lightning-fast Subject-driven Image Personalization via One step Diffusion</b><br />
+              Huy Duong, Trong-Tung Nguyen, Cuong Pham, Anh Tuan Tran, Khoi Nguyen, Minh Hoai
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <p><br /></p>
+
       <!-- Panelists -->
-      <!-- <div class="row" id="panelists">
+      <div class="row" id="panelists">
         <div class="col-xs-12">
           <h2>Invited Panelists</h2>
         </div>
-      </div> <br> -->
+      </div> <br>
 
-      <!-- <div class="row">
+      <div class="row">
         <div class="col-xs-3 person-short-box">
-          <a href="https://baulab.info">
-            <img class="people-pic" src="static/img/people/david_bau.jpg" alt="David Bau"
+          <a href="https://hila-chefer.github.io/">
+            <img class="people-pic" src="static/img/people/hila_chefer.jpg" alt="Hila Chefer"
               onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
           </a>
           <div class="people-name">
-            <a href="https://baulab.info">David Bau</a>
-            <h6>Northeastern University</h6>
+            <a href="https://hila-chefer.github.io/">Hila Chefer</a>
+            <h6>Black Forest Labs &amp; Tel Aviv University</h6>
           </div>
         </div>
         <div class="col-xs-3 person-short-box">
-          <a href="https://varunjampani.github.io/">
-            <img class="people-pic" src="static/img/people/varun_jampani.jpg" alt="Varun Jampani"
+          <a href="https://orpatashnik.github.io/">
+            <img class="people-pic" src="static/img/people/or_patashnik.jpg" alt="Or Patashnik"
               onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
           </a>
           <div class="people-name">
-            <a href="https://varunjampani.github.io/">Varun Jampani</a>
-            <h6>Arcade AI</h6>
+            <a href="https://orpatashnik.github.io/">Or Patashnik</a>
+            <h6>Tel Aviv University &amp; Snap</h6>
           </div>
         </div>
         <div class="col-xs-3 person-short-box">
-          <a href="https://www.porikli.com/">
-            <img class="people-pic" src="static/img/people/fatih_porikli.jpg" alt="Fatih Porikli"
+          <a href="https://natanielruiz.github.io/">
+            <img class="people-pic" src="static/img/people/nataniel_ruiz.jpg" alt="Nataniel Ruiz"
               onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
           </a>
           <div class="people-name">
-            <a href="https://www.porikli.com/">Fatih Porikli</a>
-            <h6>Qualcomm AI Research</h6>
+            <a href="https://natanielruiz.github.io/">Nataniel Ruiz</a>
+            <h6>Google DeepMind</h6>
           </div>
         </div>
-      </div> -->
-      <!-- <p><br /></p> -->
+        <div class="col-xs-3 person-short-box">
+          <a href="https://kfiraberman.github.io/">
+            <img class="people-pic" src="static/img/people/kfir_aberman.jpg" alt="Kfir Aberman"
+              onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+          </a>
+          <div class="people-name">
+            <a href="https://kfiraberman.github.io/">Kfir Aberman</a>
+            <h6>Decart AI</h6>
+          </div>
+        </div>
+        <div class="col-xs-3 person-short-box">
+          <a href="https://nupurkmr9.github.io">
+            <img class="people-pic" src="static/img/people/nupur_kumari.jpg" alt="Nupur Kumari"
+              onerror="this.onerror=null;this.src='static/img/people/placeholder.jpg';" />
+          </a>
+          <div class="people-name">
+            <a href="https://nupurkmr9.github.io">Nupur Kumari</a>
+            <h6>Carnegie Mellon University</h6>
+          </div>
+        </div>
+      </div>
+      <p><br /></p>
 
 
       <!-- Organizers -->
